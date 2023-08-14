@@ -46,14 +46,6 @@ main {
     width: 45%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
-footer {
-    text-align: center;
-    padding: 1em;
-    background-color: #333;
-    color: white;
-}
-
 .login-form {
     display: flex;
     align-items: center;
@@ -74,3 +66,15 @@ footer {
     border-radius: 3px;
     cursor: pointer;
 }
+
+footer {
+    position: fixed;
+    text-align: center;
+    padding: 1em;
+    background-color: #333;
+    color: white;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
