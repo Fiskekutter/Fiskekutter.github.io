@@ -7,14 +7,18 @@
     <title>Dashboard Example</title>
 </head>
 <body>
-    <header>
-        <h1>Dashboard</h1>
-        <div class="login-form">
-            <input type="text" placeholder="Username">
-            <input type="password" placeholder="Password">
-            <button>Login</button>
+        <header>
+            <h1>Dashboard</h1>
+        </header>
+        <div class="login-form" id="login-form">
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button id="login-button">Login</button>
         </div>
-    </header>
+        <div class="user-info" id="user-info">
+            <img src="pic_bulbon.gif" alt="Avatar">
+            <span id="username-display"></span>
+        </div>
     <nav>
         <ul>
             <li><a href="#">Home</a></li>
@@ -35,5 +39,7 @@
     <footer>
         <p>&copy; 2023 Your Dashboard. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

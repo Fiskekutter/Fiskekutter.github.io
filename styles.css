@@ -46,7 +46,29 @@ main {
     width: 45%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+.user-info {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    display: flex;
+    align-items: center;
+    font-size: large;
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+.user-info img {
+    width: 30px;
+    height: 30px;
+    margin-right: 0.5em;
+    border-radius: 50%;
+}
+
 .login-form {
+    position: absolute;
+    top: 1em;
+    right: 1em;
     display: flex;
     align-items: center;
 }
@@ -60,7 +82,7 @@ main {
 
 .login-form button {
     padding: 0.3em 0.6em;
-    background-color: #333;
+    background-color: #000000;
     color: white;
     border: none;
     border-radius: 3px;
