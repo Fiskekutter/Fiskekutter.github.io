@@ -16,7 +16,7 @@ header {
     padding: 1em;
 }
 
-.user-info img { visibility: hidden; display: none; }
+#avatar { visibility: hidden; display: none; }
 
 nav {
     background-color: #444;

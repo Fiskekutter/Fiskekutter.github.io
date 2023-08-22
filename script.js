@@ -15,9 +15,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
             // Display the username
             usernameDisplay.textContent = username;
-            avatar.style.position = "inline"
+            avatar.style.display = "flex";
             avatar.style.visibility = "visible";
-            avatar.style.display = "display-box"
             userInfo.style.display = "flex";
         } else {
             alert("Login failed. Please check your username and password.");
