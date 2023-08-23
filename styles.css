@@ -124,6 +124,20 @@ main {
     cursor: pointer;
 }
 
+.bitcoin {
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    padding: 1px;
+}
+
+.ethereum {
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    padding: 1px;
+}
+
 footer {
     position: fixed;
     text-align: center;
