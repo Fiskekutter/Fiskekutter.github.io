@@ -16,40 +16,6 @@ header {
     padding: 1em;
 }
 
-.referrals {
-    position: absolute;
-}
-
-img.github {
-    border-radius: 100%;
-    width: 30px;
-    height: 30px;
-    padding: 2px;
-}
-
-img.linkedin {
-    border-radius: 100%;
-    width: 30px;
-    height: 30px;
-    padding: 2px;
-}
-
-#avatar { 
-    visibility: hidden; 
-    display: none; 
-}
-
-#logout-button{
-    padding: 0.3em 0.6em;
-    background-color: #000000;
-    color: white;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    display: none;
-    visibility: none;
-}
-
 nav {
     background-color: #444;
     color: white;
@@ -86,6 +52,7 @@ main {
 
 .user-info {
     position: absolute;
+    float: right;
     top: 1em;
     right: 1em;
     display: flex;
@@ -104,6 +71,7 @@ main {
 
 .login-form {
     position: absolute;
+    display: flex;
     top: 1em;
     right: 1em;
     display: flex;
@@ -115,15 +83,36 @@ main {
     margin: 0 0.5em;
     border: 1px solid #ccc;
     border-radius: 3px;
+    float: right;
 }
 
 .login-form button {
     padding: 0.3em 0.6em;
-    background-color: #000000;
-    color: white;
+    background-color: #ccc;
+    width: auto;
+    height: auto;
+    color: black;
     border: none;
     border-radius: 3px;
     cursor: pointer;
+}
+
+#logout-button{
+    padding: 0.3em 0.6em;
+    width: auto;
+    height: auto;
+    background-color: #ccc;
+    color: black;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    display: none;
+    visibility: none;
+}
+
+#avatar { 
+    visibility: hidden; 
+    display: none; 
 }
 
 .bitcoin {
@@ -151,3 +140,23 @@ footer {
     right: 0;
 }
 
+img.github {
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    float: right;
+}
+
+img.linkedin {
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    float: right;
+}
+
+.refer-p {
+    padding: 4px;
+    float: right;
+}
