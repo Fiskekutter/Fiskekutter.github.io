@@ -14,7 +14,24 @@ header {
     color: white;
     text-align: center;
     padding: 1em;
-    display: flex;
+}
+
+.referrals {
+    position: absolute;
+}
+
+img.github {
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+}
+
+img.linkedin {
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
 }
 
 #avatar { 

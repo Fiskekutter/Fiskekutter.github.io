@@ -7,19 +7,23 @@
     <title>Fiskekutter</title>
 </head>
 <body>
-        <header>
-            <h1>Dashboard</h1>
-        </header>
-        <div class="login-form" id="login-form">
-            <input type="text" id="username" placeholder="Username">
-            <input type="password" id="password" placeholder="Password">
-            <button id="login-button">Login</button>
+    <header>
+        <div class="referrals">
+            <a href="https://github.com/Fiskekutter"><img src="images/github1.png" class="github"></a>
+            <a href="https://www.linkedin.com/in/s%C3%B8ren-harbo-hermansen-a9806a208/?locale=en_US"><img src="images/linkedin1.png" class="linkedin"></a>
         </div>
-        <div class="user-info" id="user-info" hidden="hidden">
-            <span id="username-display"></span>
-            <img id="avatar" src="pic_bulbon.gif">
-            <button id="logout-button">Logout</button>
-        </div>
+        <h1>Dashboard</h1>
+    </header>
+    <div class="login-form" id="login-form">
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button id="login-button">Login</button>
+    </div>
+    <div class="user-info" id="user-info" hidden="hidden">
+        <span id="username-display"></span>
+        <img id="avatar" src="images/pic_bulbon.gif">
+        <button id="logout-button">Logout</button>
+    </div>
     <nav>
         <ul>
             <li><a href="/page.html">Home</a></li>
@@ -28,22 +32,22 @@
         </ul>
     </nav>
     <main>
-            <section class="dashboard-item">
-                <h2>Analytics Overview</h2>
-                <p>This section contains an overview of your website analytics.</p>
-            </section>
-            <section class="dashboard-item">
-                <h2>Recent Activity</h2>
-                <p>This section displays the recent activities on your website.</p>
-            </section>
-            <section class ="dashboard-item">
-                <h2>Bitcoin (BTC)</h2>
-                <p>Price: <span id="bitcoinPrice"></span></p>
-            </section>
-            <section class="dashboard-item">
-                <h2>Ethereum (ETH)</h2>
-                <p>Price: <span id="ethereumPrice"></span></p>
-            </section>
+        <section class="dashboard-item">
+            <h2>Analytics Overview</h2>
+            <p>This section contains an overview of your website analytics.</p>
+        </section>
+        <section class="dashboard-item">
+            <h2>Recent Activity</h2>
+            <p>This section displays the recent activities on your website.</p>
+        </section>
+        <section class ="dashboard-item">
+            <h2>Bitcoin (BTC)</h2>
+            <p>Price: <span id="bitcoinPrice"></span></p>
+        </section>
+        <section class="dashboard-item">
+            <h2>Ethereum (ETH)</h2>
+            <p>Price: <span id="ethereumPrice"></span></p>
+        </section>
     </main>
     <footer>
         <p>&copy; 2023 Your Dashboard. All rights reserved.</p>
