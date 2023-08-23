@@ -59,11 +59,11 @@ async function fetchCryptoData() {
         ethereumPriceElement.textContent = `$${data.ethereum.usd}`;
     } catch (error) {
         console.error('Error fetching data:', error);
-        bitcoinPriceElement.textContent = "Error";
-        ethereumPriceElement.textContent = "Error";
+        bitcoinPriceElement.textContent = error;
+        ethereumPriceElement.textContent = error;
     }
 }
 
 // Fetch data initially and set an interval for continuous updates
 fetchCryptoData();
-setInterval(fetchCryptoData, 60000); // Update every 10 seconds
+setInterval(fetchCryptoData, 30000); // Update every 30 seconds

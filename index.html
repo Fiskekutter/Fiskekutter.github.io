@@ -9,7 +9,7 @@
 <body>
     <div>
         <header>
-            <h1>Dashboard</h1>
+            <h1>Home</h1>
         </header>
         <div class="login-form" id="login-form">
             <input type="text" id="username" placeholder="Username">
@@ -30,14 +30,20 @@
         </ul>
     </nav>
     <main>
-        <section class ="dashboard-item">
-            <h2><img class="bitcoin" src="images/bitcoin.png">Bitcoin</h2>
-            <p>Price: <span id="bitcoinPrice"></span></p>
-        </section>
-        <section class="dashboard-item">
-            <h2><img class="ethereum" src="images/ethereum.png">Ethereum</h2>
-            <p>Price: <span id="ethereumPrice"></span></p>
-        </section>
+        <div class="grid-container">
+            <div class="grid-item">
+                <h2><img class="bitcoin" src="images/bitcoin.png">Bitcoin: </h2>
+            </div>
+            <div class="grid-item">
+                <h2 id="bitcoinPrice"></h2>
+            </div>
+            <div class="grid-item">
+                <h2><img class="ethereum" src="images/ethereum.png">Ethereum: </h2>
+            </div>
+            <div class="grid-item">
+                <h2 id="ethereumPrice"></h2>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="referrals">
