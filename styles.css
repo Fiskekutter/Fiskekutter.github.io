@@ -54,6 +54,7 @@ main {
     padding: 2em;
     display: flex;
     justify-content: space-between;
+    border-color: aqua;
 }
 
 .dashboard-item {

@@ -44,5 +44,24 @@ document.addEventListener("DOMContentLoaded", function() {
             alert("Login failed. Please check your username and password.");
         }
     });
-
 });
+
+// Function to fetch cryptocurrency data
+async function fetchCryptoData() {
+    try {
+        const response = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum&vs_currencies=usd');
+        const data = await response.json();
+
+        const bitcoinPriceElement = document.getElementById('bitcoinPrice');
+        const ethereumPriceElement = document.getElementById('ethereumPrice');
+
+        bitcoinPriceElement.textContent = `$${data.bitcoin.usd}`;
+        ethereumPriceElement.textContent = `$${data.ethereum.usd}`;
+    } catch (error) {
+        console.error('Error fetching data:', error);
+    }
+}
+
+// Fetch data initially and set an interval for continuous updates
+fetchCryptoData();
+setInterval(fetchCryptoData, 60000); // Update every 10 seconds
