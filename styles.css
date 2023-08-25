@@ -141,6 +141,10 @@ main ul{
     justify-items: left;
 }
 
+.grid-item h1 {
+    margin: 5px;
+}
+
 footer {
     position: fixed;
     text-align: center;
