@@ -50,17 +50,20 @@ document.addEventListener("DOMContentLoaded", function() {
 async function fetchCryptoData() {
     const bitcoinPriceElement = document.getElementById('bitcoinPrice');
     const ethereumPriceElement = document.getElementById('ethereumPrice');
+    const solanaPriceElement = document.getElementById('solanaPrice');
 
     try {
-        const response = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum&vs_currencies=usd');
+        const response = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,solana&vs_currencies=usd');
         const data = await response.json();
 
         bitcoinPriceElement.textContent = `$${data.bitcoin.usd}`;
         ethereumPriceElement.textContent = `$${data.ethereum.usd}`;
+        solanaPriceElement.textContent = `$${data.solana.usd}`;
     } catch (error) {
         console.error('Error fetching data:', error);
         bitcoinPriceElement.textContent = error;
         ethereumPriceElement.textContent = error;
+        solanaPriceElement.textContent = error;
     }
 }
 
