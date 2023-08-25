@@ -122,6 +122,12 @@ main ul{
     height: 35px;
 }
 
+.solana {
+    border-radius: 100%;
+    width: 25px;
+    height: 35px;
+}
+
 .grid-container {
     display: inline-grid;
     grid-template-columns: auto auto;
