@@ -59,6 +59,7 @@ async function fetchCryptoData() {
         bitcoinPriceElement.textContent = `€${data.bitcoin.eur}`;
         ethereumPriceElement.textContent = `€${data.ethereum.eur}`;
         solanaPriceElement.textContent = `€${data.solana.eur}`;
+        
         if(data.bitcoin.eur_24h_change > 0){
             bitcoinPriceElement.style.color = "green";
         } else {
