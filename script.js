@@ -53,18 +53,36 @@ async function fetchCryptoData() {
     const solanaPriceElement = document.getElementById('solanaPrice');
 
     try {
-        const response = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,solana&vs_currencies=eur');
+        const response = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cethereum%2Csolana&vs_currencies=eur&include_24hr_change=true');
         const data = await response.json();
 
         bitcoinPriceElement.textContent = `€${data.bitcoin.eur}`;
         ethereumPriceElement.textContent = `€${data.ethereum.eur}`;
         solanaPriceElement.textContent = `€${data.solana.eur}`;
+        if(data.bitcoin.eur_24h_change > 0){
+            bitcoinPriceElement.style.color = "green";
+        } else {
+            bitcoinPriceElement.style.color = "red";
+        }
+        if(data.ethereum.eur_24h_change > 0){
+            ethereumPriceElement.style.color = "green";
+        } else {
+            ethereumPriceElement.style.color = "red";
+        }
+        if(data.solana.eur_24h_change > 0){
+            solanaPriceElement.style.color = "green";
+        } else {
+            solanaPriceElement.style.color = "red";
+        }
+
     } catch (error) {
         console.error('Error fetching data:', error);
         bitcoinPriceElement.textContent = error;
         ethereumPriceElement.textContent = error;
         solanaPriceElement.textContent = error;
     }
+
+
 }
 
 // Fetch data initially and set an interval for continuous updates
