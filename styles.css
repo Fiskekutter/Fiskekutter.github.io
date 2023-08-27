@@ -130,7 +130,7 @@ main ul{
 
 .grid-container {
     display: inline-grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
     text-align: left;
 }
 
