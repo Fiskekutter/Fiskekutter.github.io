@@ -30,14 +30,23 @@
         </ul>
     </nav>
     <main>
-        <div class="container">
-            <h1>Stock Price Viewer</h1>
-            <label for="symbol">Enter Stock Symbol:</label>
-            <input type="text" id="symbol">
-            <button id="fetchBtn">Fetch Price</button>
-            <div id="priceDisplay"></div>
+        <div class="container-contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+          
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            
+            <div>
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+          
+              <button type="submit">Submit</button>
+            </form>
           </div>
-          <script src="script.js"></script>
     </main>
     <footer>
         <div class="referrals">

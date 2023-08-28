@@ -129,3 +129,18 @@ document.getElementById('fetchBtn').addEventListener('click', async () => {
       console.error('Error fetching data:', error);
     }
   });
+
+  
+  const contactForm = document.getElementById('contactForm');
+  contactForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    const formData = new FormData(contactForm);
+    const formDataObject = {};
+    formData.forEach((value, key) => {
+      formDataObject[key] = value;
+    });
+
+    console.log(formDataObject);
+
+  });

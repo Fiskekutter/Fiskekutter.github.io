@@ -74,6 +74,10 @@ main ul{
 }
 
 .login-form input {
+    background-color: #ccc;
+}
+
+.login-form input {
     padding: 0.3em;
     margin: 0 0.5em;
     border: 1px solid #ccc;
@@ -92,6 +96,10 @@ main ul{
     cursor: pointer;
 }
 
+.login-form button:hover {
+    background-color: #ddd;
+    }
+
 #logout-button{
     padding: 0.3em 0.6em;
     width: auto;
@@ -103,6 +111,10 @@ main ul{
     cursor: pointer;
     display: none;
     visibility: none;
+}
+
+#logout-button:hover {
+    background-color: #ddd;
 }
 
 #avatar { 
@@ -175,4 +187,39 @@ img.linkedin {
 .refer-p {
     padding: 4px;
     float: right;
+}
+
+
+.container-contact {
+background-color: #333;
+border-radius: 5px;
+padding: 20px;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+width: 400px;
+}
+
+
+.container-contact label, .container-contact h2 {
+    color: #fff;
+}
+
+.container-contact input, .container-contact textarea {
+width: 100%;
+padding: 10px;
+margin-bottom: 10px;
+border: 1px solid #ccc;
+border-radius: 3px;
+background-color: #ccc;
+}
+
+.container-contact button {
+background-color: #ccc;
+border: none;
+padding: 10px 20px;
+border-radius: 3px;
+cursor: pointer;
+}
+
+.container-contact button:hover {
+background-color: #ddd;
 }
