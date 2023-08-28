@@ -130,19 +130,19 @@ document.getElementById('fetchBtn').addEventListener('click', async () => {
     }
   });
 
+document.addEventListener("DOMContentLoaded", function() {
+    contactForm.addEventListener('submit', function(event) {
+        event.preventDefault();
 
+        const contactForm = document.getElementById('contactForm');
 
-  contactForm.addEventListener('submit', function(event) {
-    event.preventDefault();
-    
-    const contactForm = document.getElementById('contactForm');
+        const formData = new FormData(contactForm);
+        const formDataObject = {};
+        formData.forEach((value, key) => {
+            formDataObject[key] = value;
+        });
 
-    const formData = new FormData(contactForm);
-    const formDataObject = {};
-    formData.forEach((value, key) => {
-      formDataObject[key] = value;
+        console.log(formDataObject);
+
+        })
     });
-
-    console.log(formDataObject);
-
-  });
