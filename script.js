@@ -131,10 +131,12 @@ document.getElementById('fetchBtn').addEventListener('click', async () => {
   });
 
 
-  const contactForm = document.getElementById('contactForm');
+
   contactForm.addEventListener('submit', function(event) {
     event.preventDefault();
     
+    const contactForm = document.getElementById('contactForm');
+
     const formData = new FormData(contactForm);
     const formDataObject = {};
     formData.forEach((value, key) => {
