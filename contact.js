@@ -3,9 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     contactForm.addEventListener('submit', function(event) {
         event.preventDefault();
-
         
-
         const formData = new FormData(contactForm);
         const formDataObject = {};
         formData.forEach((value, key) => {
