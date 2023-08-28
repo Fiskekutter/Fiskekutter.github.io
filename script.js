@@ -1,3 +1,5 @@
+document.querySelector('meta[name="viewport"]').setAttribute('content', 'width='+siteWidth+', initial-scale='+scale+'');
+
 document.addEventListener("DOMContentLoaded", function() {
     const loginButton = document.getElementById("login-button");
     const loginForm = document.getElementById("login-form");
