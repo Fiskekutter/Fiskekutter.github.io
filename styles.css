@@ -38,12 +38,52 @@ main {
     padding: 2em;
     display: flex;
     position: relative;
-    border-color: aqua;
 }
 
-main ul{
-    list-style: none;
+#login-logo {
+    background-image: url(images/login.png);
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border-color: #333;
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    float: right;
 }
+
+.login-popout {
+    border: #fff;
+    background-color: #333;
+    display: none;
+    position: absolute;
+    top: 45px;
+    right: 35px;
+    height: auto;
+    width: auto;
+    align-items: center;
+}
+
+.login-popout input {
+    height: 30px;
+    width: 150px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    justify-content: center;
+}
+
+.login-popout button {
+    padding: 5px 5px;
+    background-color: #ccc;
+    color: black;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
 
 .user-info {
     position: absolute;
@@ -63,42 +103,6 @@ main ul{
     margin-right: 0.5em;
     border-radius: 50%;
 }
-
-.login-form {
-    position: absolute;
-    display: flex;
-    top: 1em;
-    right: 1em;
-    display: flex;
-    align-items: center;
-}
-
-.login-form input {
-    background-color: #ccc;
-}
-
-.login-form input {
-    padding: 0.3em;
-    margin: 0 0.5em;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    float: right;
-}
-
-.login-form button {
-    padding: 0.3em 0.6em;
-    background-color: #ccc;
-    width: auto;
-    height: auto;
-    color: black;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-}
-
-.login-form button:hover {
-    background-color: #ddd;
-    }
 
 #logout-button{
     padding: 0.3em 0.6em;
