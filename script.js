@@ -27,10 +27,25 @@ document.addEventListener("DOMContentLoaded", function() {
         if (username === "ad" && password === "ad") {
 
             loginBoxButton.style.display = "none";
+            box = false;
             loginBox.style.display = "none";
+
+            usernameDisplay.textContent = username;
+
+            userInfo.style.display = "flex";
+            usernameDisplay.style.display = "flex";
+            avatar.style.display = "flex";
+            avatar.style.visibility = "visible";
+            logoutButton.style.display = "flex";
+            
             
             logoutButton.addEventListener("click", function() {
+                userInfo.style.display = "none";
+                usernameDisplay.style.display = "none";
+                avatar.style.display = "none";
+                logoutButton.style.display = "none";
 
+                loginBoxButton.style.display = "block";
             });
         } else {
             alert("Login failed. Please check your username and password.");
