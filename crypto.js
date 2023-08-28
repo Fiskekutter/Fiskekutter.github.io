@@ -60,4 +60,5 @@ async function fetchCryptoData() {
 
 // Fetch data initially and set an interval for continuous updates
 fetchCryptoData();
-setInterval(fetchCryptoData, 30000); // Update every 30 seconds
+
+//setInterval(fetchCryptoData, 30000); // Update every 30 seconds
