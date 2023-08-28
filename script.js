@@ -1,4 +1,4 @@
-document.querySelector('meta[name="viewport"]').setAttribute('content', 'width='+siteWidth+', initial-scale='+scale+'');
+//document.querySelector('meta[name="viewport"]').setAttribute('content', 'width='+siteWidth+', initial-scale='+scale+'');
 
 document.addEventListener("DOMContentLoaded", function() {
     const loginButton = document.getElementById("login-button");
@@ -130,7 +130,7 @@ document.getElementById('fetchBtn').addEventListener('click', async () => {
     }
   });
 
-  
+
   const contactForm = document.getElementById('contactForm');
   contactForm.addEventListener('submit', function(event) {
     event.preventDefault();
