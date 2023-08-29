@@ -150,9 +150,9 @@ main {
 }
 
 .grid-item {
-    font-size: 2vw;
+    font-size: 3vw;
+    margin-left: 1vw;
     text-align: left;
-    margin-left: 2vw;
     justify-items: left;
 }
 
