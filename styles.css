@@ -30,9 +30,16 @@ nav ul {
 }
 
 nav a {
+    box-shadow: inset 0 0 0 0 #333;
     text-decoration: none;
     color: white;
+    transition: color .1s ease-in-out, box-shadow .3s ease-in-out;
 }
+
+nav a:hover {
+    box-shadow: inset 100px 0 0 0 #333;
+    color: white;
+  }
 
 main {
     padding: 2em;
