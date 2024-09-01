@@ -134,14 +134,17 @@ main {
 
 .bitcoin {
     border-radius: 100%;
+    width: 30px;
 }
 
 .ethereum {
     border-radius: 100%;
+    width: 30px;
 }
 
 .solana {
     border-radius: 100%;
+    width: 30px;
 }
 
 .grid-container {

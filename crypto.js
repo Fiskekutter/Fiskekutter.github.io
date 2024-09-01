@@ -16,23 +16,35 @@ async function fetchCryptoData() {
         const response = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cethereum%2Csolana&vs_currencies=eur&include_24hr_change=true');
         const data = await response.json();
         const d = new Date();
-        let time = d.getTime();
 
-        // Calculate milliseconds in a year
-        const minute = 1000 * 60;
-        const hour = minute * 60;
-        const day = hour * 24;
-        const year = day * 365;
+        let hour = d.getHours();
+        let minutes = d.getMinutes();
+        let month = d.getMonth() + 1;
+        let day = d.getDate()
 
-        let years = Math.round(d.getTime() / year);
+        if(hour < 10){
+            hour = '0' + d.getHours().toString();
+        }
+        if(minutes < 10){
+            minutes = '0' + d.getHours().toString();
+        }
+        if(month < 10){
+            month = '0' + (d.getMonth()+1).toString();
+        }
+        if(day < 10){
+            day = '0' + d.getDate().toString();
+        }
+
+
+        let update = hour + ':' + minutes + ' ' + day + '-' + month + '-' + d.getFullYear();
 
         bitcoinPriceElement.textContent = `€${data.bitcoin.eur}`;
         ethereumPriceElement.textContent = `€${data.ethereum.eur}`;
         solanaPriceElement.textContent = `€${data.solana.eur}`;
 
-        bitcoinLastUpdate.textContent = years;
-        ethereumLastUpdate.textContent = years;
-        solanaLastUpdate.textContent = years;
+        bitcoinLastUpdate.textContent = update;
+        ethereumLastUpdate.textContent = update;
+        solanaLastUpdate.textContent = update;
     
         if(data.bitcoin.eur_24h_change > 0){
             bitcoinPriceElement.style.color = "green";
