@@ -230,3 +230,7 @@ cursor: pointer;
 .container-contact button:hover {
 background-color: #ddd;
 }
+
+canvas#cSnake{
+    
+}
