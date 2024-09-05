@@ -2,26 +2,24 @@
 var c = document.getElementById("cSnake");
 var ctx = c.getContext("2d");
 
-ctx.lineWidth = 5;
+ctx.fillStyle = "black";
+ctx.fillRect(150, 150, 30, 10);
 
 let lineX= 150
 let lineY= 150;
 
-let directionX = 1;
+let directionX = 5;
 let directionY = 0;
 
 async function snakeLoop() {
-    let moveX = lineX;
-    let moveY = lineY;
 
-    lineX = lineX + directionX;
-    lineY = lineY + directionY;
-    
-    ctx.beginPath();
-    ctx.moveTo(lineX, lineY);
-    ctx.lineTo(moveX, moveY);
-    ctx.stroke();
-        
+    ctx.clearRect(lineX, lineY, 30, 10);
+
+    lineX += directionX;
+    lineY += directionY;
+
+    ctx.fillRect(lineX, lineY, 30, 10);
+
     if(lineX == 300 || lineY == 300 || lineX == 0 || lineY == 0){
         clearTimeout(refresh);
     }
@@ -37,21 +35,21 @@ document.addEventListener("keydown",
     switch(keyName){
         case 's':
             directionX = 0;
-            directionY = 1;
+            directionY = 5;
             console.log("s was pressed");
             break;
         case 'w':
             directionX = 0;
-            directionY = -1;
+            directionY = -5;
             console.log("w was pressed");
             break;
         case 'd':
-            directionX = 1;
+            directionX = 5;
             directionY = 0;
             console.log("d was pressed");
             break;
         case 'a':
-            directionX = -1;
+            directionX = -5;
             directionY = 0;
             console.log("a was pressed");
             break;
